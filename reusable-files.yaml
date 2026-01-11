@@ -1,0 +1,14 @@
+#Pod.yaml
+
+apiVersion: v1
+kind: Pod
+metadata:
+  name: k8s
+  labels:
+    app: k8s-app
+spec:
+  containers:
+    - name: c1
+      image: ishwarisantras/devops-b2:piano
+      ports:
+       - containerPort: 80
